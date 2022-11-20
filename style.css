@@ -1,0 +1,272 @@
+@font-face {
+  font-family: cursive-main;
+  src: url('/fonts/Parisienne-Regular.ttf');
+}
+
+@font-face {
+  font-family: roboto-light;
+  src: url('/fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+  font-family: roboto-thin;
+  src: url('/fonts/Roboto-Thin.ttf');
+}
+
+@font-face {
+  font-family: roboto-regular;
+  src: url('/fonts/Roboto-Regular.ttf');
+}
+
+:root {
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+}
+
+main section {
+  width: 100%;
+  height: 100vh;
+}
+
+main .info-section {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.7rem;
+  padding: 25px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'roboto-thin', sans-serif;
+}
+
+#navigation {
+  padding: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#name {
+  font-family: 'cursive-main', cursive;
+  font-size: 1.5rem;
+  color: #c7979c;
+}
+
+#links {
+  display: flex;
+  gap: 15px;
+}
+
+#links div {
+  font-family: 'roboto-light', sans-serif;
+  color: #c7979c;
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.split-section {
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.split-section section {
+  border-radius: 5px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#wedding-section {
+  background: url('/img/wedding-ring-flowers.jpg') transparent no-repeat center
+    center / cover;
+}
+#wedding-split-section .left-section {
+  background: url('/img/wedding-1.jpg') transparent no-repeat center center /
+    cover;
+}
+#wedding-split-section .right-section {
+  background: url('/img/wedding-3.jpg') transparent no-repeat center center /
+    cover;
+}
+
+#model-section {
+  background: url('/img/model-a-leaf.jpg') transparent no-repeat center center /
+    cover;
+}
+#model-split-section .left-section {
+  background: url('/img/model-a-couch-1.jpg') transparent no-repeat center
+    center / cover;
+}
+#model-split-section .right-section {
+  background: url('/img/model-a-couch-2.jpg') transparent no-repeat center
+    center / cover;
+}
+
+#maternity-section {
+  background: url('/img/maternity-1.jpg') transparent no-repeat center center /
+    cover;
+}
+#maternity-split-section .left-section {
+  background: url('/img/maternity-2.jpg') transparent no-repeat center center /
+    cover;
+}
+#maternity-split-section .right-section {
+  background: url('/img/baby-2.jpg') transparent no-repeat center center / cover;
+}
+
+#couples-section {
+  background: url('/img/couples-1.jpg') transparent no-repeat center center /
+    cover;
+}
+#couples-split-section .left-section {
+  background: url('/img/couples-5.jpg') transparent no-repeat center center /
+    cover;
+}
+#couples-split-section .right-section {
+  background: url('/img/couples-3.jpg') transparent no-repeat center center /
+    cover;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+#about-me div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-me-image {
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  background: url('/img/about-me.jpg') transparent no-repeat center center /
+    cover;
+}
+
+#about-me p {
+  text-align: center;
+  color: white;
+  font-family: 'roboto-light', sans-serif;
+  line-height: 1.5;
+  width: 750px;
+  font-size: 1.5rem;
+  max-width: 95%;
+}
+
+.preload {
+  display: none;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact h3 {
+  color: #6bb0ff;
+  font-size: 2rem;
+  font-family: 'roboto-regular', sans-serif;
+  margin-bottom: 10px;
+  text-align: left;
+}
+#contact address {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+#contact address div {
+  display: flex;
+  gap: 10px;
+}
+#contact address div a {
+  color: #c7979c;
+  font-family: 'roboto-light', sans-serif;
+}
+
+.svg-icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #6bb0ff;
+}
+
+.svg-icon circle {
+  stroke: #6bb0ff;
+  stroke-width: 1;
+}
+
+@media only screen and (max-width: 1100px) {
+  .split-section {
+    height: 50vh;
+  }
+  .split-section section {
+    border-radius: 0px;
+  }
+  #about-me-image {
+    height: 150px;
+    width: 150px;
+  }
+
+  #about-me p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #navigation {
+    display: none;
+    flex-direction: column;
+  }
+
+  #navigation #links {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
